@@ -1,0 +1,6 @@
+C:\labs\lab_08_files\bin\Debug\lab_08_files.exe.config
+C:\labs\lab_08_files\bin\Debug\lab_08_files.exe
+C:\labs\lab_08_files\bin\Debug\lab_08_files.pdb
+C:\labs\lab_08_files\obj\Debug\lab_08_files.csproj.CoreCompileInputs.cache
+C:\labs\lab_08_files\obj\Debug\lab_08_files.exe
+C:\labs\lab_08_files\obj\Debug\lab_08_files.pdb

@@ -1,0 +1,7 @@
+C:\labs\lab_07_files\bin\Debug\lab_07_files.exe.config
+C:\labs\lab_07_files\bin\Debug\lab_07_files.exe
+C:\labs\lab_07_files\bin\Debug\lab_07_files.pdb
+C:\labs\lab_07_files\obj\Debug\lab_07_files.csprojAssemblyReference.cache
+C:\labs\lab_07_files\obj\Debug\lab_07_files.csproj.CoreCompileInputs.cache
+C:\labs\lab_07_files\obj\Debug\lab_07_files.exe
+C:\labs\lab_07_files\obj\Debug\lab_07_files.pdb
