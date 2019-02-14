@@ -28,6 +28,7 @@ namespace lab_06_wpf
         private void ButtonStart_Click(object sender, RoutedEventArgs e)
         {
             textInputCharacter.AppendText($"You chose time {textBoxTotalTime.Text}");
+
         }
     }
 }
