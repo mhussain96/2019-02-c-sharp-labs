@@ -1,0 +1,16 @@
+C:\2019-02-c-sharp-labs\labs\lab_04_array_test2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\2019-02-c-sharp-labs\labs\lab_04_array_test2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\2019-02-c-sharp-labs\labs\lab_04_array_test2\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\2019-02-c-sharp-labs\labs\lab_04_array_test2\bin\Debug\lab_04_array_test2.dll
+C:\2019-02-c-sharp-labs\labs\lab_04_array_test2\bin\Debug\lab_04_array_test2.pdb
+C:\2019-02-c-sharp-labs\labs\lab_04_array_test2\bin\Debug\lab_04_array1.dll
+C:\2019-02-c-sharp-labs\labs\lab_04_array_test2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\2019-02-c-sharp-labs\labs\lab_04_array_test2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\2019-02-c-sharp-labs\labs\lab_04_array_test2\bin\Debug\lab_04_array1.pdb
+C:\2019-02-c-sharp-labs\labs\lab_04_array_test2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\2019-02-c-sharp-labs\labs\lab_04_array_test2\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\2019-02-c-sharp-labs\labs\lab_04_array_test2\obj\Debug\lab_04_array_test2.csprojAssemblyReference.cache
+C:\2019-02-c-sharp-labs\labs\lab_04_array_test2\obj\Debug\lab_04_array_test2.csproj.CoreCompileInputs.cache
+C:\2019-02-c-sharp-labs\labs\lab_04_array_test2\obj\Debug\lab_04_array_test2.csproj.CopyComplete
+C:\2019-02-c-sharp-labs\labs\lab_04_array_test2\obj\Debug\lab_04_array_test2.dll
+C:\2019-02-c-sharp-labs\labs\lab_04_array_test2\obj\Debug\lab_04_array_test2.pdb

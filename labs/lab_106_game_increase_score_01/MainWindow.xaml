@@ -6,7 +6,15 @@
         xmlns:local="clr-namespace:lab_106_game_increase_score_01"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="#f4b942">
+        <TextBox FontSize="20" HorizontalAlignment="Left" Height="37" Margin="288,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="241" TextChanged="TextBox1_TextChanged" Name="user" Text="EnterName"/>
+        <TextBox FontSize="20" HorizontalAlignment="Left" Height="32" Margin="288,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="241" TextChanged="TextBox2_TextChanged" Name="lvl" Text="0"/>
+        <TextBox FontSize="20" HorizontalAlignment="Left" Height="32" Margin="288,174,0,0" TextWrapping="Wrap" Text=" 100" VerticalAlignment="Top" Width="241" TextChanged="TextBox3_TextChanged" Name="score" />
+        <Button FontSize="20" Name="save" Content="SAVE" HorizontalAlignment="Left" Margin="568,347,0,0" VerticalAlignment="Top" Width="182" Click="Button_Click"/>
+        <Label FontSize="20" Content="Username" HorizontalAlignment="Left" Margin="155,32,0,0" VerticalAlignment="Top" Height="37"/>
+        <Label FontSize="20" Content="Level" HorizontalAlignment="Left" Margin="155,104,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.702,6.36" Height="32"/>
+        <Label FontSize="20" Content="HighScore" HorizontalAlignment="Left" Margin="155,174,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.79,3.278" Height="49"/>
+        <Button FontSize="20" Content="Up" HorizontalAlignment="Left" Margin="269,235,0,0" VerticalAlignment="Top" Width="119" Height="51" RenderTransformOrigin="1.275,0.414" Click="Button_Click_1"/>
+        <Button FontSize="20" Content="Down" HorizontalAlignment="Left" Margin="432,235,0,0" VerticalAlignment="Top" Width="119" Height="51" Click="Button_Click_2"/>
     </Grid>
 </Window>

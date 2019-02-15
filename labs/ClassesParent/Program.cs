@@ -11,11 +11,23 @@ namespace ClassesParent
         static void Main(string[] args)
         {
             //Task 4
-            Parent person01 = new Parent("Mage", 23, new DateTime(2000, 12, 15));
-            Console.WriteLine(person01.Name1);
-            Console.WriteLine(person01.Age1);
-            Console.WriteLine(person01.Dob1);
+            string[] myNamesArray = { "Mage", "Mike", "Tyrone", "Seb", "Jake", "Steve", "Bob", "Adam", "Sam", "Desmond" };
+
+
+            Random rand = new Random();
+            int index = rand.Next(myNamesArray.Length);
+            Console.WriteLine($"Randomly selected person is {myNamesArray[index]}");
+
+            int randomNumber = rand.Next(1, 100);
+            Console.WriteLine($"Age is {randomNumber}");
+
+            Parent person01 = new Parent(myNamesArray[index], randomNumber);
+
+            List<Parent> myList = new List<Parent>();
+            myList.Add(person01);
+
         }
+
     }
 
     class Parent
@@ -27,6 +39,8 @@ namespace ClassesParent
         public string Name1 { get => Name; set => Name = value; }
         public int Age1 { get => Age; set => Age = value; }
         public DateTime Dob1 => Dob;
+
+
 
         public Parent(string name, int age, DateTime? dob = null)
         {

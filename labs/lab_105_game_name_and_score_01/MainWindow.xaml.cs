@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml;
+using System.Xml.Linq;
+using System.IO;
 
 namespace lab_105_game_name_and_score_01
 {
@@ -23,6 +26,47 @@ namespace lab_105_game_name_and_score_01
         public MainWindow()
         {
             InitializeComponent();
+            Initialize();
         }
+        
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            File.WriteAllText("fileUser.txt", user.Text + Environment.NewLine + lvl.Text + Environment.NewLine + score.Text);                        
+        }
+
+        private void TextBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBox2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBox3_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        void Initialize()
+        {
+            string[] data01 = File.ReadAllLines("fileUser.txt");
+            user.Text = data01[0];
+            lvl.Text = data01[1];
+            score.Text = data01[2];
+            
+                       
+        }
+
+
+
+
+        // creates a Gaming Home Page
+        // Name of gamer (saved to text file)
+        // level reached 
+        // Top score 
+        // Prize 
     }
 }

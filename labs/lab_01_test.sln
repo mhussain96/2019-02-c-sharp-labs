@@ -13,19 +13,33 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_04_array1", "lab_04_arr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_04_array_test2", "lab_04_array_test2\lab_04_array_test2.csproj", "{72CDE28D-E1F4-4F70-892E-37E22EAD908E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_06_wpf", "lab_06_wpf\lab_06_wpf.csproj", "{5D18B6E3-3ECE-4E6D-ADDC-971DAD131A8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_102_speedtyping_GUI_01", "lab_06_wpf\lab_102_speedtyping_GUI_01.csproj", "{5D18B6E3-3ECE-4E6D-ADDC-971DAD131A8E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_07_files", "lab_07_files\lab_07_files.csproj", "{F8255232-0D60-4784-8944-E237AE165B8E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_08_files", "lab_08_files\lab_08_files.csproj", "{4E7F8DFD-469E-409F-A148-81D527ED39FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeedTyping", "SpeedTyping\SpeedTyping.csproj", "{E6846AEB-7321-415E-9D84-8BA2ECD3959D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab-101-SpeedTyping-01", "SpeedTyping\lab-101-SpeedTyping-01.csproj", "{E6846AEB-7321-415E-9D84-8BA2ECD3959D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesParent", "ClassesParent\ClassesParent.csproj", "{81BE39FA-1AD1-4F2C-B2F7-49D83BF3F6DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_103_person_generator", "ClassesParent\lab_103_person_generator.csproj", "{81BE39FA-1AD1-4F2C-B2F7-49D83BF3F6DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_104_array_list_queue_dict_stack_01", "lab_104_array_list_queue_dict_stack_01\lab_104_array_list_queue_dict_stack_01.csproj", "{924A08B7-FD6A-43AA-8139-BB4407C5C51E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_09_xml", "lab_09_xml\lab_09_xml.csproj", "{00CD3134-70A2-450C-8A39-0CE1BB6DDC7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_105_game_name_and_score_01", "lab_105_game_name_and_score_01\lab_105_game_name_and_score_01.csproj", "{929BB186-EC90-45C9-90E1-FFA933D5D884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_106_game_increase_score_01", "lab_106_game_increase_score_01\lab_106_game_increase_score_01.csproj", "{A3B59345-FE60-4B27-A112-2F069AD553A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_107_list_folders_01", "lab_107_list_folders_01\lab_107_list_folders_01.csproj", "{9A96F571-E323-484C-8938-316C38664ABE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_108_list_files_and_folder_01", "lab_108_list_files_and_folder_01\lab_108_list_files_and_folder_01.csproj", "{13E890B6-5860-4B86-92F8-099856D700D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab _109_new_file_with_content_01", "lab _109_new_with_content_01\lab _109_new_file_with_content_01.csproj", "{75F84D13-0389-4D6D-B55B-F31E494A243A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_10_entity", "lab_10_entity\lab_10_entity.csproj", "{ACB4CA86-8E30-4211-8AD1-1C6886784798}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_11_entity_GUI", "lab_11_entity_GUI\lab_11_entity_GUI.csproj", "{E0CE536C-945E-4C0C-8783-2E4865F2A231}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +95,34 @@ Global
 		{00CD3134-70A2-450C-8A39-0CE1BB6DDC7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00CD3134-70A2-450C-8A39-0CE1BB6DDC7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00CD3134-70A2-450C-8A39-0CE1BB6DDC7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{929BB186-EC90-45C9-90E1-FFA933D5D884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{929BB186-EC90-45C9-90E1-FFA933D5D884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{929BB186-EC90-45C9-90E1-FFA933D5D884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{929BB186-EC90-45C9-90E1-FFA933D5D884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3B59345-FE60-4B27-A112-2F069AD553A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3B59345-FE60-4B27-A112-2F069AD553A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3B59345-FE60-4B27-A112-2F069AD553A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3B59345-FE60-4B27-A112-2F069AD553A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A96F571-E323-484C-8938-316C38664ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A96F571-E323-484C-8938-316C38664ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A96F571-E323-484C-8938-316C38664ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A96F571-E323-484C-8938-316C38664ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13E890B6-5860-4B86-92F8-099856D700D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13E890B6-5860-4B86-92F8-099856D700D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13E890B6-5860-4B86-92F8-099856D700D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13E890B6-5860-4B86-92F8-099856D700D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75F84D13-0389-4D6D-B55B-F31E494A243A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75F84D13-0389-4D6D-B55B-F31E494A243A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75F84D13-0389-4D6D-B55B-F31E494A243A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75F84D13-0389-4D6D-B55B-F31E494A243A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACB4CA86-8E30-4211-8AD1-1C6886784798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACB4CA86-8E30-4211-8AD1-1C6886784798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACB4CA86-8E30-4211-8AD1-1C6886784798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACB4CA86-8E30-4211-8AD1-1C6886784798}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0CE536C-945E-4C0C-8783-2E4865F2A231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0CE536C-945E-4C0C-8783-2E4865F2A231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0CE536C-945E-4C0C-8783-2E4865F2A231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0CE536C-945E-4C0C-8783-2E4865F2A231}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
