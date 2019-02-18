@@ -16,8 +16,9 @@ namespace HangmanGame
             Random rand = new Random();
             // selection of words stored in a string variable 
             string[] listOfStates = { "mississippi", "massachusetts", "oregon", "california", "ohio", "vermont", "virginia", "arizona", "connecticut", "montana" };
-            // randomly states selected fom wordBank
+            // randomly selected states from wordBank
             string usaStatesGuessed = listOfStates[rand.Next(listOfStates.Length)];
+            
           
             StringBuilder display = new StringBuilder(usaStatesGuessed.Length);
 
@@ -25,6 +26,7 @@ namespace HangmanGame
             //{
             //    display.Append("_");
             //}
+
             Console.WriteLine(usaStatesGuessed);
             List<char> lettersGuessedCorrectly = new List<char>();
             List<char> lettersGuessedIncorrectly = new List<char>();
@@ -32,47 +34,45 @@ namespace HangmanGame
             Console.WriteLine(display);
           
             bool victory = true;
-            int lives = 5;
+            int lives = 3;
             string input;
             char letterGuess;
             int lettersShown = 0;
+            Console.WriteLine("Press enter to start: ");
+            Console.ReadKey();
+           
+            Console.WriteLine("Welcome to Maiwand's Version of Hangman. Can you name the US state?");
 
             while (victory && lives > 0)
             {
-                //Console.WriteLine("Welcome to Maiwand's Version of Hangman. Can you name the US state?");
-                Console.Write("Select a letter: ");
-
+                Console.Write("Enter a letter: ");
                 input = Console.ReadLine();
                 letterGuess = input[0];
 
                 if (lettersGuessedCorrectly.Contains(letterGuess))
                 {
-                    Console.WriteLine($"You have guessed correctly \n{letterGuess}");
-                    for (int i = 0; i < usaStatesGuessed.Length; i++)
-                    {
-                        if (usaStatesGuessed[i] == letterGuess)
-                        {
-                            display[i] = usaStatesGuessed[i];
-                            lettersShown++;
-                        }
-                    }
+                    Console.WriteLine($"\nYou have guessed correctly: \n{letterGuess}");
+                    continue;
                 }
                 else if (lettersGuessedIncorrectly.Contains(letterGuess))
                 {
-                    Console.WriteLine($"You have guessed incorrectly: \n{letterGuess}");                                      
+                    Console.WriteLine($"\nYou have guessed incorrectly: \n{letterGuess}");
+                    continue;
                 }
+
+               
 
                 if (lettersShown == usaStatesGuessed.Length)
                 {
-                    victory = true;                    
+                    victory = true;
                 }
                 else
                 {
-                    Console.WriteLine("You have guessed incorrectly!");
+                    // Console.WriteLine("You have guessed incorrectly!");
                     lettersGuessedIncorrectly.Add(letterGuess);
-                    lives--;
+                    //lives--;
                 }
-                Console.WriteLine(display.ToString());
+                //Console.WriteLine(display.ToString());
             }
 
             if (victory == true)
