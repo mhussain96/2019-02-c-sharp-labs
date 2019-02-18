@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace ClassesParent
 {
@@ -12,22 +13,33 @@ namespace ClassesParent
         {
             //Task 4
             string[] myNamesArray = { "Mage", "Mike", "Tyrone", "Seb", "Jake", "Steve", "Bob", "Adam", "Sam", "Desmond" };
+            
+            for (int i = 0; i < 99; i++)
+            {
+                Random rand = new Random();
+                int index = rand.Next(myNamesArray.Length);
 
 
-            Random rand = new Random();
-            int index = rand.Next(myNamesArray.Length);
-            Console.WriteLine($"Randomly selected person is {myNamesArray[index]}");
+                int randomNumber = rand.Next(1, 100);
 
-            int randomNumber = rand.Next(1, 100);
-            Console.WriteLine($"Age is {randomNumber}");
 
-            Parent person01 = new Parent(myNamesArray[index], randomNumber);
+                DateTime start = new DateTime(1919, 1, 1);
+                int range = (DateTime.Today - start).Days;
+                DateTime randomDate = start.AddDays(rand.Next(range));
 
-            List<Parent> myList = new List<Parent>();
-            myList.Add(person01);
 
+
+                Parent person01 = new Parent(myNamesArray[index], randomNumber, randomDate);
+
+                List<Parent> myList = new List<Parent>();
+                myList.Add(person01);
+
+                Console.WriteLine($"Randomly selected person is {myNamesArray[index]}");
+                Console.WriteLine($"Age is {randomNumber}");
+                Console.WriteLine($"DOB: {randomDate}");
+                Thread.Sleep(1000);
+            }
         }
-
     }
 
     class Parent
