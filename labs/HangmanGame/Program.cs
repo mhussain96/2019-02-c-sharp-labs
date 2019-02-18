@@ -15,41 +15,38 @@ namespace HangmanGame
 
             Random rand = new Random();
             // selection of words stored in a string variable 
-            string[] word = { "alabama", "alaska", "arizona", "arkansas", "california", "colorado", "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho", "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana", "maine", "maryland", "massachusetts", "michigan", "minnesota", "mississippi", "missouri", "montana", "mebraska", "nevada", "new hampshire", "new jersey", "new mexico", "new york", "north carolina", "north dakota", "ohio", "oklahoma", "oregon", "pennsylvania", "rhode island", "south carolina", "south dakota", "tennessee", "texas", "utah", "vermont", "virgin island", "virginia", "washington", "west virginia", "wisconsin", "wyoming" };
+            string[] word = { "alabama", "alaska", "arizona", "arkansas", "california", "colorado", "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho", "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana", "maine", "maryland", "massachusetts", "michigan", "minnesota", "mississippi", "missouri", "montana", "mebraska", "nevada", "north dakota", "ohio", "oklahoma", "oregon", "pennsylvania", "tennessee", "texas", "utah", "vermont", "virginia", "washington", "wisconsin", "wyoming" };
+                        
             // randomly selected states from wordBank
-            char[] randUsaStates = word[rand.Next(word.Length)].ToCharArray();
+            string randUsaStates = word[rand.Next(word.Length)];
+
+            char[] lettersGuessed = new char[randUsaStates.Length];
             
-          
-            
-            //Console.WriteLine(usaStatesGuessed);
             List<char> lettersGuessedCorrectly = new List<char>();
-            List<char> lettersGuessedIncorrectly = new List<char>();
+            //List<char> lettersGuessedIncorrectly = new List<char>();
 
-
+            //Console.WriteLine(randUsaStates);
             
-            int lives = 3;
-            bool win = true;
+            int lives = 5;
+            bool win = false;
             char underscoreToHide = '_';
+            int lettersFound = 0;
             Console.WriteLine("Press enter to start: ");
             Console.ReadKey();
            
-            Console.WriteLine("Welcome to Maiwand's Version of Hangman. Can you name the US state?");
+            Console.WriteLine("Welcome to Maiwand's Version of Hangman. You have 5 lives to start with, if you guess wrong you lose a life. \nCan you name the US state?");
 
-            while (win)
+            while (!win)
             {
-                //Console.WriteLine(usaStatesGuessed);
-
                 foreach (var character in randUsaStates)
                 {
                     if (lettersGuessedCorrectly.Contains(character))
                     {
                         Console.WriteLine(character);
+
                     }                  
                     else
-                    {
-                        
-                        
-
+                    {                                               
                         Console.WriteLine(underscoreToHide);
                     }
                 }
@@ -61,35 +58,42 @@ namespace HangmanGame
                 {
                     Console.WriteLine("Correct letter!");                   
                     lettersGuessedCorrectly.Add(letter);
-                    win = true;
-                    
+
+                    for (int i = 0; i < randUsaStates.Length; i++)
+                    {
+                        if (randUsaStates[i] == letter)
+                        {
+                            lettersFound++;
+                        }
+                    }  
+                    if (lettersFound == randUsaStates.Length)
+                    {
+                        win = true;
+                    }
                 }
                 else
                 {
-                    if (win && lives > 0)
+                    if (!win && lives > 0)
                     {
                         lives--;
                         Console.WriteLine("Incorrect letter!");
-
-                        if (lives == 0)
+                        Console.WriteLine($"\nYou have {lives} lives remaining");
+                        if (lives <= 0)
                         {
-                            Console.WriteLine("Game Over!");
+                            Console.WriteLine("Unlucky you're a loser!");
                             break;
-                        }
-                        
-                        
-                        //continue;
-                        
-                    }
+                        }                       
+                    }                   
                     else
-                    {
-                        Console.WriteLine("Correct letter!");
-                        
-                        //continue;
+                    {                        
+                        Console.WriteLine("Correct letter!");                        
                     }
                 }
-                Console.WriteLine("Congratulations you win!");
-                              
+                
+                if (win)
+                {
+                    Console.WriteLine("Congratulations you win!");
+                }
             }           
         }
     }
