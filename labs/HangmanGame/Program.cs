@@ -20,19 +20,13 @@ namespace HangmanGame
             char[] randUsaStates = word[rand.Next(word.Length)].ToCharArray();
             
           
-            //StringBuilder display = new StringBuilder(usaStatesGuessed.Length);
-
-            //for (int i = 0; i < usaStatesGuessed.Length; i++)
-            //{
-            //    display.Append("_");
-            //}
-
+            
             //Console.WriteLine(usaStatesGuessed);
             List<char> lettersGuessedCorrectly = new List<char>();
             List<char> lettersGuessedIncorrectly = new List<char>();
 
 
-            //Console.WriteLine(display);
+            
             int lives = 3;
             bool win = true;
             char underscoreToHide = '_';
@@ -41,7 +35,7 @@ namespace HangmanGame
            
             Console.WriteLine("Welcome to Maiwand's Version of Hangman. Can you name the US state?");
 
-            while (win == true)
+            while (win)
             {
                 //Console.WriteLine(usaStatesGuessed);
 
@@ -50,9 +44,12 @@ namespace HangmanGame
                     if (lettersGuessedCorrectly.Contains(character))
                     {
                         Console.WriteLine(character);
-                    }
+                    }                  
                     else
                     {
+                        
+                        
+
                         Console.WriteLine(underscoreToHide);
                     }
                 }
@@ -62,18 +59,24 @@ namespace HangmanGame
 
                 if (randUsaStates.Contains(letter))
                 {
-                    Console.WriteLine("Correct letter!");
-                    
+                    Console.WriteLine("Correct letter!");                   
                     lettersGuessedCorrectly.Add(letter);
                     win = true;
                     
                 }
                 else
                 {
-                    if (win == true)
+                    if (win && lives > 0)
                     {
-                        //lettersGuessedCorrectly.Clear();
+                        lives--;
                         Console.WriteLine("Incorrect letter!");
+
+                        if (lives == 0)
+                        {
+                            Console.WriteLine("Game Over!");
+                            break;
+                        }
+                        
                         
                         //continue;
                         
@@ -81,18 +84,12 @@ namespace HangmanGame
                     else
                     {
                         Console.WriteLine("Correct letter!");
+                        
                         //continue;
                     }
                 }
-
-                if (lives < 0)
-                {
-                    lettersGuessedIncorrectly.Add(letter);
-                    lives--;
-                    break;
-                }
-
-                
+                Console.WriteLine("Congratulations you win!");
+                              
             }           
         }
     }
