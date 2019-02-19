@@ -15,16 +15,15 @@ namespace HangmanGame
 
             Random rand = new Random();
             // selection of words stored in a string variable 
-            string[] word = { "alabama", "alaska", "arizona", "arkansas", "california", "colorado", "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho", "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana", "maine", "maryland", "massachusetts", "michigan", "minnesota", "mississippi", "missouri", "montana", "mebraska", "nevada", "north dakota", "ohio", "oklahoma", "oregon", "pennsylvania", "tennessee", "texas", "utah", "vermont", "virginia", "washington", "wisconsin", "wyoming" };
+            string[] word = { "alabama", "alaska", "arizona", "arkansas", "california", "colorado", "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho", "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana", "maine", "maryland", "massachusetts", "michigan", "minnesota", "mississippi", "missouri", "montana", "nebraska", "nevada", "north dakota", "ohio", "oklahoma", "oregon", "pennsylvania", "tennessee", "texas", "utah", "vermont", "virginia", "washington", "wisconsin", "wyoming" };
                         
             // randomly selected states from wordBank
             string randUsaStates = word[rand.Next(word.Length)];
 
-            char[] lettersGuessed = new char[randUsaStates.Length];
+            //char[] lettersGuessed = new char[randUsaStates.Length];
             
             List<char> lettersGuessedCorrectly = new List<char>();
-            //List<char> lettersGuessedIncorrectly = new List<char>();
-
+            
             //Console.WriteLine(randUsaStates);
             
             int lives = 5;
@@ -43,7 +42,6 @@ namespace HangmanGame
                     if (lettersGuessedCorrectly.Contains(character))
                     {
                         Console.WriteLine(character);
-
                     }                  
                     else
                     {                                               
@@ -80,7 +78,7 @@ namespace HangmanGame
                         Console.WriteLine($"\nYou have {lives} lives remaining");
                         if (lives <= 0)
                         {
-                            Console.WriteLine("Unlucky you're a loser!");
+                            Console.WriteLine("\nUnlucky you're a loser!");
                             break;
                         }                       
                     }                   
@@ -92,7 +90,8 @@ namespace HangmanGame
                 
                 if (win)
                 {
-                    Console.WriteLine("Congratulations you win!");
+                    Console.WriteLine("\nCongratulations you win!");
+                    break;
                 }
             }           
         }
