@@ -69,10 +69,7 @@ namespace ClassesParent
                 DateTime.Now.Minute,
                 DateTime.Now.Second);
             }
-            else
-            {
-                this.Dob = (DateTime)Dob;
-            }
+            
         }
     }
 }

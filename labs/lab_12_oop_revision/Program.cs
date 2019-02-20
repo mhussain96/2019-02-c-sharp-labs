@@ -38,5 +38,5 @@ namespace lab_12_oop_revision
 
     }
     // Cannot inherit from grandchild as it is sealed
-    class Invalid : GrandChild { }
+    //class Invalid : GrandChild { }
 }

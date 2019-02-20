@@ -26,15 +26,21 @@ namespace HangmanGUI
 
         static string randUsaStates = word[rand.Next(word.Length)];
 
-        static char[] lettersGuessed = new char[randUsaStates.Length];
+        static char[] wordChar = randUsaStates.ToCharArray();
 
-        List<char> lettersGuessedCorrectly = new List<char>();
+        static char[] dashes = new char[randUsaStates.Length];
+        
+        
+
+        List<int> lettersGuessedCorrectly = new List<int>();
+        List<int> lettersGuessedIncorrectly = new List<int>();
         List<Button> usedButton = new List<Button>();
 
         int lives = 5;
         
-        char dashToHide = '-';
+        
         int lettersFound = 0;
+        
 
         public MainWindow()
         {
@@ -44,28 +50,74 @@ namespace HangmanGUI
         // start button
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {                       
-            wordDisplayed.Text = new String(dashToHide, lettersGuessed.Length);            
-        }
+            //wordDisplayed.Text = new String(dashToHide, randUsaStates.Length);
+            
 
+            for (int i = 0; i < dashes.Length; i++)
+            {
+                dashes[i] = '-';
+            }
+            string myDash = new string(dashes);
+
+            wordDisplayed.Text = myDash;
+
+            //int lives = 5;
+
+        }
+        
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
             Button pressed = (Button)sender;
             usedButton.Add(pressed);
             string letterClicked = pressed.Content.ToString();
-            bool win = false;
-
-            foreach (var character in randUsaStates)
+            pressed.IsEnabled = false;
+            string myDash = new string(dashes);
+            Console.WriteLine(randUsaStates);
+            Console.WriteLine(randUsaStates.Contains(Convert.ToChar(letterClicked)));
+            
+                
+            foreach (var character in wordChar)
             {
-                if (letterClicked == randUsaStates)
+                //Console.WriteLine(character);
+                if (Convert.ToChar(letterClicked) == character)
                 {
                     lettersFound++;
+                    for (int i = randUsaStates.IndexOf(letterClicked); i > -1; i = randUsaStates.IndexOf(letterClicked, i+1))
+                    {
+                        lettersGuessedCorrectly.Add(i);                       
+                        //Console.WriteLine(i);
+                    }
+                    
+                    foreach (var item in lettersGuessedCorrectly)
+                    {
+                        dashes[item] = Convert.ToChar(letterClicked);
+                        string myDash1 = new string(dashes);
+                        wordDisplayed.Text = myDash1;                                              
+                    }
+                    if (lettersGuessedCorrectly.Count > 0)
+                    {
+                        lettersGuessedCorrectly.Clear();
+                    }
+                    //Console.WriteLine("Found");
+                }
 
-                    //wordDisplayed.Text = character.ToString();
-                }
-                else
+                
+                
+                if (randUsaStates.Length == lettersFound)
                 {
-                    //wordDisplayed.Text = dashToHide.ToString();
+                    MessageBox.Show("Congratulations You Win!");
                 }
+                else if (lives < 2)
+                {
+                    MessageBox.Show("You Lose!");
+                }
+            }
+            
+            if (!randUsaStates.Contains(Convert.ToChar(letterClicked)))
+            {
+                lives--;
+                score.Text = lives.ToString();               
             }
         }
     }

@@ -79,6 +79,7 @@ namespace HangmanGame
                         if (lives <= 0)
                         {
                             Console.WriteLine("\nUnlucky you're a loser!");
+                            //Console.WriteLine($"The answer is {randUsaStates}");
                             break;
                         }                       
                     }                   
@@ -88,7 +89,7 @@ namespace HangmanGame
                     }
                 }
                 
-                if (win)
+                if (win && lives > 0)
                 {
                     Console.WriteLine("\nCongratulations you win!");
                     break;
