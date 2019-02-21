@@ -1,0 +1,5 @@
+C:\2019-02-c-sharp-labs\labs\lab_04_array1\bin\Debug\lab_04_array1.dll
+C:\2019-02-c-sharp-labs\labs\lab_04_array1\bin\Debug\lab_04_array1.pdb
+C:\2019-02-c-sharp-labs\labs\lab_04_array1\obj\Debug\lab_04_array1.csproj.CoreCompileInputs.cache
+C:\2019-02-c-sharp-labs\labs\lab_04_array1\obj\Debug\lab_04_array1.dll
+C:\2019-02-c-sharp-labs\labs\lab_04_array1\obj\Debug\lab_04_array1.pdb

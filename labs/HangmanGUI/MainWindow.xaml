@@ -1,0 +1,45 @@
+﻿<Window x:Class="HangmanGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HangmanGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\2019-02-c-sharp-labs\labs\HangmanGUI\images\chalkboard.jpg" Stretch="UniformToFill"/>
+
+        </Grid.Background>
+        <Button Content="a" HorizontalAlignment="Left" Margin="29,288,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="b" HorizontalAlignment="Left" Margin="82,288,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="c" HorizontalAlignment="Left" Margin="135,288,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="d" HorizontalAlignment="Left" Margin="188,288,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="e" HorizontalAlignment="Left" Margin="241,288,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="f" HorizontalAlignment="Left" Margin="294,288,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="g" HorizontalAlignment="Left" Margin="347,288,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="h" HorizontalAlignment="Left" Margin="400,288,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="i" HorizontalAlignment="Left" Margin="453,288,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="j" HorizontalAlignment="Left" Margin="506,288,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="k" HorizontalAlignment="Left" Margin="559,288,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="l" HorizontalAlignment="Left" Margin="612,288,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="m" HorizontalAlignment="Left" Margin="665,288,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="n" HorizontalAlignment="Left" Margin="29,337,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="p" HorizontalAlignment="Left" Margin="135,337,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="q" HorizontalAlignment="Left" Margin="188,337,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="r" HorizontalAlignment="Left" Margin="241,337,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="s" HorizontalAlignment="Left" Margin="294,337,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="t" HorizontalAlignment="Left" Margin="347,337,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="u" HorizontalAlignment="Left" Margin="400,337,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="v" HorizontalAlignment="Left" Margin="453,337,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="w" HorizontalAlignment="Left" Margin="506,337,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="x" HorizontalAlignment="Left" Margin="559,337,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="y" HorizontalAlignment="Left" Margin="612,337,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="z" HorizontalAlignment="Left" Margin="665,337,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <Button Content="o" HorizontalAlignment="Left" Margin="82,337,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
+        <TextBox x:Name="wordDisplayed" FontSize="40" HorizontalAlignment="Left" Height="70" Margin="29,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="684" TextAlignment="Center"/>
+        <TextBox x:Name="score" FontSize="30" HorizontalAlignment="Left" Height="45" Margin="114,122,0,0" TextWrapping="Wrap" Text="5" TextAlignment="Center" VerticalAlignment="Top" Width="48"/>
+        <Label FontSize="30" Foreground="#fff" Content="Lives:" HorizontalAlignment="Left" Margin="29,122,0,0" VerticalAlignment="Top"/>
+        <Button FontSize="22" Content="START" HorizontalAlignment="Left" Margin="612,122,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="Button_Click_1"/>
+    </Grid>
+</Window>
