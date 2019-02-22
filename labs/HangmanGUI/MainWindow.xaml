@@ -37,9 +37,11 @@
         <Button Content="y" HorizontalAlignment="Left" Margin="612,337,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
         <Button Content="z" HorizontalAlignment="Left" Margin="665,337,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
         <Button Content="o" HorizontalAlignment="Left" Margin="82,337,0,0" VerticalAlignment="Top" Width="48" Height="44" Click="Button_Click"/>
-        <TextBox x:Name="wordDisplayed" FontSize="40" HorizontalAlignment="Left" Height="70" Margin="29,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="684" TextAlignment="Center"/>
-        <TextBox x:Name="score" FontSize="30" HorizontalAlignment="Left" Height="45" Margin="114,122,0,0" TextWrapping="Wrap" Text="5" TextAlignment="Center" VerticalAlignment="Top" Width="48"/>
-        <Label FontSize="30" Foreground="#fff" Content="Lives:" HorizontalAlignment="Left" Margin="29,122,0,0" VerticalAlignment="Top"/>
-        <Button FontSize="22" Content="START" HorizontalAlignment="Left" Margin="612,122,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="Button_Click_1"/>
+        <TextBox x:Name="wordDisplayed" FontSize="40" HorizontalAlignment="Left" Height="70" Margin="29,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="684" TextAlignment="Center"/>
+        <TextBox x:Name="score" FontSize="30" HorizontalAlignment="Left" Height="45" Margin="114,201,0,0" TextWrapping="Wrap" Text="5" TextAlignment="Center" VerticalAlignment="Top" Width="48"/>
+        <Label FontSize="30" Foreground="#fff" Content="Lives:" HorizontalAlignment="Left" Margin="29,197,0,0" VerticalAlignment="Top"/>
+        <Button FontSize="22" Content="START" HorizontalAlignment="Left" Margin="612,197,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="Button_Click_1"/>
+        <Label Content="Can you name the US state?" Foreground="#fff" FontSize="25" HorizontalAlignment="Left" Height="53" Margin="236,214,0,0" VerticalAlignment="Top" Width="318"/>
+        <Label Content="HANGMAN" FontSize="40" Foreground="#fff" HorizontalAlignment="Left" Margin="294,10,0,0" VerticalAlignment="Top" Width="366"/>
     </Grid>
 </Window>

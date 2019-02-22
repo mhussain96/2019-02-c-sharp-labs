@@ -22,26 +22,21 @@ namespace HangmanGUI
     {
         static Random rand = new Random();
 
-        static string[] word = { "alabama", "alaska", "arizona", "arkansas", "california", "colorado", "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho", "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana", "maine", "maryland", "massachusetts", "michigan", "minnesota", "mississippi", "missouri", "montana", "nebraska", "nevada", "north dakota", "ohio", "oklahoma", "oregon", "pennsylvania", "tennessee", "texas", "utah", "vermont", "virginia", "washington", "wisconsin", "wyoming" };
+        static string[] word = { "alabama", "alaska", "arizona", "arkansas", "california", "colorado", "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho", "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana", "maine", "maryland", "massachusetts", "michigan", "minnesota", "mississippi", "missouri", "montana", "nebraska", "nevada", "ohio", "oklahoma", "oregon", "pennsylvania", "tennessee", "texas", "utah", "vermont", "virginia", "washington", "wisconsin", "wyoming" };
 
         static string randUsaStates = word[rand.Next(word.Length)];
 
         static char[] wordChar = randUsaStates.ToCharArray();
 
         static char[] dashes = new char[randUsaStates.Length];
-        
-        
-
+                
         List<int> lettersGuessedCorrectly = new List<int>();
-        List<int> lettersGuessedIncorrectly = new List<int>();
         List<Button> usedButton = new List<Button>();
 
         int lives = 5;
         
-        
         int lettersFound = 0;
         
-
         public MainWindow()
         {
             InitializeComponent();
@@ -52,22 +47,17 @@ namespace HangmanGUI
         {                       
             //wordDisplayed.Text = new String(dashToHide, randUsaStates.Length);
             
-
             for (int i = 0; i < dashes.Length; i++)
             {
                 dashes[i] = '-';
             }
             string myDash = new string(dashes);
 
-            wordDisplayed.Text = myDash;
-
-            //int lives = 5;
-
+            wordDisplayed.Text = myDash;           
         }
         
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
             Button pressed = (Button)sender;
             usedButton.Add(pressed);
             string letterClicked = pressed.Content.ToString();
@@ -75,8 +65,7 @@ namespace HangmanGUI
             string myDash = new string(dashes);
             Console.WriteLine(randUsaStates);
             Console.WriteLine(randUsaStates.Contains(Convert.ToChar(letterClicked)));
-            
-                
+                           
             foreach (var character in wordChar)
             {
                 //Console.WriteLine(character);
@@ -101,9 +90,7 @@ namespace HangmanGUI
                     }
                     //Console.WriteLine("Found");
                 }
-
-                
-                
+                             
                 if (randUsaStates.Length == lettersFound)
                 {
                     MessageBox.Show("Congratulations You Win!");
