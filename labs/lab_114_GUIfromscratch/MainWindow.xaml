@@ -18,7 +18,8 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="TextBoxName" Grid.Row="1" Grid.Column="2"/>
+        <ComboBox x:Name="DropdownBox" Grid.Row="1" Grid.Column="2" SelectionChanged="DropdownBox_SelectionChanged"/>
+        <TextBox x:Name="TextBoxName" Grid.Row="0" Grid.Column="2" TextChanged="TextBoxName_TextChanged"/>
         <Button x:Name="UpdateName" Content="UPDATE" FontSize="23" Grid.Row="2" Grid.Column="2" Click="UpdateName_Click"/>
         <ListBox x:Name="ListBox01" Grid.Column="0" Grid.Row="3" Background="#9ee58a"/>
         <ListBox x:Name="ListBox02" Grid.Column="1" Grid.Row="3" Background="#6ee58a" SelectionChanged="ListBox02_SelectionChanged"/>

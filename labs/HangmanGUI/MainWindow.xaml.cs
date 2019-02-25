@@ -46,7 +46,7 @@ namespace HangmanGUI
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {                       
             //wordDisplayed.Text = new String(dashToHide, randUsaStates.Length);
-            
+            // Changes length of word into dashes upon clicking the start button and displays it in textbox
             for (int i = 0; i < dashes.Length; i++)
             {
                 dashes[i] = '-';
@@ -69,7 +69,8 @@ namespace HangmanGUI
             foreach (var character in wordChar)
             {
                 //Console.WriteLine(character);
-                if (Convert.ToChar(letterClicked) == character)
+                // button clicked is equal to the character in the word display in the textbox
+                if (Convert.ToChar(letterClicked) == character)   
                 {
                     lettersFound++;
                     for (int i = randUsaStates.IndexOf(letterClicked); i > -1; i = randUsaStates.IndexOf(letterClicked, i+1))
@@ -90,7 +91,8 @@ namespace HangmanGUI
                     }
                     //Console.WriteLine("Found");
                 }
-                             
+                
+                // once letters found is equal to length of the word, user wins.
                 if (randUsaStates.Length == lettersFound)
                 {
                     MessageBox.Show("Congratulations You Win!");
@@ -100,7 +102,7 @@ namespace HangmanGUI
                     MessageBox.Show("You Lose!");
                 }
             }
-            
+            // lives decrease for every incorrect answer
             if (!randUsaStates.Contains(Convert.ToChar(letterClicked)))
             {
                 lives--;

@@ -24,19 +24,32 @@ namespace lab_107_list_folders_01
         public MainWindow()
         {
             InitializeComponent();
+            Initialize();
+        }
+
+        public void Initialize()
+        {
+            string[] allFilesAndLabs = Directory.GetDirectories("/labs");
+            
+            foreach (var box in allFilesAndLabs)
+            {
+                ListBoxItem box01 = new ListBoxItem();
+                box01.Content = box;
+               
+            }
         }
 
         private void Listbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (IsLoaded)
-            {
-                string txt = "";
-                foreach(ListBoxItem lbi in listbox.SelectedItems)
-                {
-                    txt += lbi.Content + " ";
-                }
-                MessageBox.Show(txt);
-            }
+            //if (IsLoaded)
+            //{
+            //    string txt = "";
+            //    foreach (ListBoxItem lbi in listbox.SelectedItems)
+            //    {
+            //        txt += lbi.Content + " ";
+            //    }
+            //    MessageBox.Show(txt);
+            //}
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

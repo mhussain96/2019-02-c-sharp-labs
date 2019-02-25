@@ -33,13 +33,14 @@ namespace lab_114_GUIfromscratch
         }
 
         void Initialize()
-        {
-            
+        {           
             using (var db = new NorthwindEntities())
             {
                 customers = db.Customers.ToList<Customer>();
                 ListBox02.ItemsSource = customers;
                 ListBox02.DisplayMemberPath = "ContactName";
+                DropdownBox.ItemsSource = customers;
+                DropdownBox.DisplayMemberPath = "City";
             }            
         }
 
@@ -60,6 +61,21 @@ namespace lab_114_GUIfromscratch
                     db.SaveChanges();
                 }
             }
-        }       
+        }
+
+        private void TextBoxName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void DropdownBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            using (var db = new NorthwindEntities())
+            {
+                var city = db.Customers.Where(c => c.City == customer.City).FirstOrDefault();
+
+               
+            }
+        }
     }   
 }

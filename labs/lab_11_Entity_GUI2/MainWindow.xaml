@@ -18,6 +18,8 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
+        <ComboBox x:Name="ComboBoxStaticCity" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Height="32" Margin="0.2,0,264.6,323" Grid.RowSpan="2" VerticalAlignment="Bottom" SelectionChanged="ComboBoxStaticCity_SelectionChanged_1"/>
+        <ComboBox x:Name="ComboBoxBoundToCity" Grid.Row="2" Grid.Column="0" SelectionChanged="ComboBoxBoundToCity_SelectionChanged"/>
         <TextBox x:Name="TextBoxName" Grid.Row="1" Grid.Column="2"/>
         <ListBox x:Name="ListBox01" Grid.Column="0" Grid.Row="3" Background="#9ee58a"/>
         <ListBox x:Name="ListBox02" Grid.Column="1" Grid.Row="3" Background="#6ee58a">
