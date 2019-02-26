@@ -28,8 +28,7 @@ namespace lab_114_GUIfromscratch
         public MainWindow()
         {
             InitializeComponent();
-            Initialize();
-           
+            Initialize();     
         }
 
         void Initialize()

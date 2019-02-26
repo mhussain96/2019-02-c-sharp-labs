@@ -18,8 +18,6 @@
         <Button FontSize="20" Content="Down" HorizontalAlignment="Left" Margin="432,235,0,0" VerticalAlignment="Top" Width="119" Height="51" Click="Button_Click_2"/>
         <ListBox Background="#5e5b59" Name="listbox" HorizontalAlignment="Left" Height="100" Margin="620,36,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="Listbox_SelectionChanged" SelectionMode="Multiple">
             <ListBoxItem x:Name="A" FontSize="20">FolderA</ListBoxItem>
-            <ListBoxItem x:Name="B" FontSize="20">FolderB</ListBoxItem>
-            <ListBoxItem x:Name="C" FontSize="20">FolderC</ListBoxItem>
         </ListBox>
     </Grid>
 </Window>

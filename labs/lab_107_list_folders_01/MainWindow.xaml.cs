@@ -29,27 +29,19 @@ namespace lab_107_list_folders_01
 
         public void Initialize()
         {
-            string[] allFilesAndLabs = Directory.GetDirectories("/labs");
+            string[] dirs = Directory.GetDirectories("/labs","*", SearchOption.AllDirectories);
             
-            foreach (var box in allFilesAndLabs)
+           
+            foreach (var item in dirs)
             {
-                ListBoxItem box01 = new ListBoxItem();
-                box01.Content = box;
-               
+                A.Content = item;               
+                //A.Items.Add();
             }
         }
 
         private void Listbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //if (IsLoaded)
-            //{
-            //    string txt = "";
-            //    foreach (ListBoxItem lbi in listbox.SelectedItems)
-            //    {
-            //        txt += lbi.Content + " ";
-            //    }
-            //    MessageBox.Show(txt);
-            //}
+          
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
