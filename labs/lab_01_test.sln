@@ -111,6 +111,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_28_northwind_website", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_29_ASP_DOT_NET_API", "lab_29_ASP_DOT_NET_API\lab_29_ASP_DOT_NET_API.csproj", "{C19383EA-B71C-4915-922F-9E8344D86E49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_30_Northwind_to_XML", "lab_30_Northwind_to_XML\lab_30_Northwind_to_XML.csproj", "{E194FCF7-8B9A-42A0-838A-0D458E46BEF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -333,6 +335,10 @@ Global
 		{C19383EA-B71C-4915-922F-9E8344D86E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C19383EA-B71C-4915-922F-9E8344D86E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C19383EA-B71C-4915-922F-9E8344D86E49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E194FCF7-8B9A-42A0-838A-0D458E46BEF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E194FCF7-8B9A-42A0-838A-0D458E46BEF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E194FCF7-8B9A-42A0-838A-0D458E46BEF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E194FCF7-8B9A-42A0-838A-0D458E46BEF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
