@@ -17,7 +17,7 @@ namespace HangmanGame
             // selection of words stored in a string variable 
             string[] word = { "alabama", "alaska", "arizona", "arkansas", "california", "colorado", "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho", "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana", "maine", "maryland", "massachusetts", "michigan", "minnesota", "mississippi", "missouri", "montana", "nebraska", "nevada", "north dakota", "ohio", "oklahoma", "oregon", "pennsylvania", "tennessee", "texas", "utah", "vermont", "virginia", "washington", "wisconsin", "wyoming" };
                         
-            // randomly selected states from wordBank
+            // randomly selected states from word
             string randUsaStates = word[rand.Next(word.Length)];
 
             //char[] lettersGuessed = new char[randUsaStates.Length];

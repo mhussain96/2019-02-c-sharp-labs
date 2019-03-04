@@ -69,7 +69,7 @@ namespace HangmanGUI
             foreach (var character in wordChar)
             {
                 //Console.WriteLine(character);
-                // button clicked is equal to the character in the word display in the textbox
+                // button clicked is equal to the character in the word, display in the textbox
                 if (Convert.ToChar(letterClicked) == character)   
                 {
                     lettersFound++;
@@ -78,13 +78,14 @@ namespace HangmanGUI
                         lettersGuessedCorrectly.Add(i);                       
                         //Console.WriteLine(i);
                     }
-                    
+                    // goes through word and check if the same letter occurs 
                     foreach (var item in lettersGuessedCorrectly)
                     {
                         dashes[item] = Convert.ToChar(letterClicked);
                         string myDash1 = new string(dashes);
                         wordDisplayed.Text = myDash1;                                              
                     }
+                    // clears the word and check if same letter occurs second time or third time then displays letter
                     if (lettersGuessedCorrectly.Count > 0)
                     {
                         lettersGuessedCorrectly.Clear();

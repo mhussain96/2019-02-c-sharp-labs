@@ -12,3 +12,4 @@ C:\2019-02-c-sharp-labs\labs\lab_06_wpf\obj\Debug\lab_102_speedtyping_GUI_01.csp
 C:\2019-02-c-sharp-labs\labs\lab_06_wpf\obj\Debug\lab_102_speedtyping_GUI_01.csproj.CoreCompileInputs.cache
 C:\2019-02-c-sharp-labs\labs\lab_06_wpf\obj\Debug\lab_06_wpf.exe
 C:\2019-02-c-sharp-labs\labs\lab_06_wpf\obj\Debug\lab_06_wpf.pdb
+C:\2019-02-c-sharp-labs\labs\lab_06_wpf\obj\Debug\lab_102_speedtyping_GUI_01.csprojAssemblyReference.cache

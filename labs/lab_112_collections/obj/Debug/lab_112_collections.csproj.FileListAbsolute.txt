@@ -4,3 +4,4 @@ C:\2019-02-c-sharp-labs\labs\lab_112_collections\bin\Debug\lab_112_collections.p
 C:\2019-02-c-sharp-labs\labs\lab_112_collections\obj\Debug\lab_112_collections.csproj.CoreCompileInputs.cache
 C:\2019-02-c-sharp-labs\labs\lab_112_collections\obj\Debug\lab_112_collections.exe
 C:\2019-02-c-sharp-labs\labs\lab_112_collections\obj\Debug\lab_112_collections.pdb
+C:\2019-02-c-sharp-labs\labs\lab_112_collections\obj\Debug\lab_112_collections.csprojAssemblyReference.cache

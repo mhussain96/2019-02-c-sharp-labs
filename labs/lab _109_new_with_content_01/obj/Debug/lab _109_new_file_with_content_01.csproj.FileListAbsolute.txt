@@ -12,3 +12,4 @@ C:\2019-02-c-sharp-labs\labs\lab _109_new_with_content_01\obj\Debug\lab _109_new
 C:\2019-02-c-sharp-labs\labs\lab _109_new_with_content_01\obj\Debug\lab _109_new_file_with_content_01.csproj.CoreCompileInputs.cache
 C:\2019-02-c-sharp-labs\labs\lab _109_new_with_content_01\obj\Debug\lab _109_new_with_content_01.exe
 C:\2019-02-c-sharp-labs\labs\lab _109_new_with_content_01\obj\Debug\lab _109_new_with_content_01.pdb
+C:\2019-02-c-sharp-labs\labs\lab _109_new_with_content_01\obj\Debug\lab _109_new_file_with_content_01.csprojAssemblyReference.cache
