@@ -13,9 +13,11 @@ namespace lab_118_array_of_tests
         static void Main(string[] args)
         {
             FileAsync newF = new FileAsync();
-
-            
+            Stopwatch s = new Stopwatch();
+            s.Start();
             newF.TaskArrayFileReadWrite(1000);
+            s.Stop();
+            Console.WriteLine(s.ElapsedMilliseconds);
             //newF.FileReadWrite();
         }
     }
@@ -86,15 +88,15 @@ namespace lab_118_array_of_tests
         {
             Task[] manyTask = new Task[numOfFiles];
 
-            for (int i = 0; i < numOfFiles; i++)
+            for (int i = 0; i < 999; i++)
             {
                 int multipleFiles = i;
                 // array of tasks, method myfiles 
                 manyTask[i] = Task.Run(() => myFiles(multipleFiles));
                 //File.WriteAllText($"data{numOfFiles}.txt", "something and something");
-                File.WriteAllText($"data{numOfFiles}.txt", "something and something");
-                Task.WaitAll(manyTask[i]);
-            }          
+                              
+            }
+            Task.WaitAll(manyTask);
         }
 
         public void myFiles(int manyfiles)

@@ -14,7 +14,7 @@ namespace Tests
 
         [TestCase(1000, 7000)]
         [TestCase(10000, 60000)]
-        [TestCase(1000, 500)]
+        [TestCase(1000, 5000)]
         public void TestFileSynchronousReadWrite(int numOfFiles, long maxTime)
         {
             // arrange
