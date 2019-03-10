@@ -13,12 +13,8 @@ namespace lab_121_hash_set_to_excel
         static void Main(string[] args)
         {
             HashSetToExcel h = new HashSetToExcel();
-            
+
             h.HashSetToExcelTest();
-
-            
-
-
         }
     }
 
@@ -26,56 +22,65 @@ namespace lab_121_hash_set_to_excel
     {
         public Custom HashSetToExcelTest()
         {
-            Stopwatch s = new Stopwatch();
-
+            var s = new Stopwatch();
             s.Start();
+            // Pass 3 numbers to an array
+            int[] myArr = new int[] { 1,2,3 };
 
-            int[] myNum = new int[] { 10, 20, 30 };
+            // Double the numbers and pass to a linked list
+            LinkedList<int> link = new LinkedList<int>();
 
-            LinkedList<int> numberArray = new LinkedList<int>();
-
-            foreach (int num in myNum)
+            foreach (var num in myArr)
             {
-                numberArray.AddLast(num * 2);
+                link.AddLast(num * 2);
             }
 
-            HashSet<int> myNum01 = new HashSet<int>();
+            // Double the numbers and pass to a hash set 
 
-            foreach (var newNum01 in numberArray)
+            HashSet<int> hash = new HashSet<int>();
+
+            foreach (var num in link)
             {
-                myNum01.Add(newNum01 * 2);
+                hash.Add(num * 2);
             }
+
+            // Add 15 to each number, then treble numbers and pass to a dictionary
 
             Dictionary<int, int> dict = new Dictionary<int, int>();
             int sum = 0;
-            foreach (var dict01 in myNum01)
+            foreach (var num in hash)
             {
-                dict.Add(sum, (dict01 + 15) * 3);
+                dict.Add(sum, (num + 15) * 3);
                 sum++;
             }
-
+            // Stop the stopwatch
             s.Stop();
-            Console.WriteLine($"a:{dict[0]}\nb:{dict[1]}\nc:{dict[2]}\ntime:{s.ElapsedMilliseconds}");
-            
-            return new Custom(dict[0], dict[1], dict[2], (int)s.ElapsedMilliseconds);           
+            // Return the test as a CUSTOM OBJECT CONTAINING
+            //          ElapsedTime (integer, will be in milliseconds)
+            //          First number
+            //          Second number
+            //          Third number
+            // Test passes if stopwatch time less than time passed in (4th variable) (set to 10 seconds)
+            Console.WriteLine($"a:{dict[0]}\nb:{dict[1]}\nc:{dict[2]}\nd:{s.ElapsedMilliseconds}");
+            return new Custom(dict[0], dict[1], dict[2], (int)s.ElapsedMilliseconds);          
         }
     }
 
     public class Custom
     {
         public Custom() { }
-        
-        public int num1 { get; set; }
-        public int num2 { get; set; }
-        public int num3 { get; set; }
-        public int time { get; set; }
+
+        public int a { get; set; }
+        public int b { get; set; }
+        public int c { get; set; }
+        public int d { get; set; }
 
         public Custom(int a, int b, int c, int d)
         {
-            this.num1 = a;
-            this.num2 = b;
-            this.num3 = c;
-            this.time = d;
+            this.a = a;
+            this.b = b;
+            this.c = c;
+            this.d = d;
         }
     }
 }

@@ -32,5 +32,7 @@ namespace lab_04_array1
             }
             return total;
         }
+
+        
     }
 }

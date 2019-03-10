@@ -27,20 +27,18 @@ namespace Tests
         //      OUTPUT 4 PARAMS
         // Finally launch excel to read this file using Process.Start...
 
-        [TestCase(10,20,30,40)]
+        [TestCase(10,20,30,10)]
         public void HashSetExcelTest(int a, int b, int c, int d)
         {
             var instance = new HashSetToExcel();
 
-            Custom actual = instance.HashSetToExcelTest(); 
-
-
-
+            Custom actual = instance.HashSetToExcelTest();
+            Assert.AreEqual(actual, 57);
+            Assert.AreEqual(actual, 69);
+            Assert.AreEqual(actual, 81);
+            Assert.LessOrEqual(actual.d, d);
             Assert.Pass();
-            Assert.LessOrEqual(actual.time, d);
-            Assert.AreEqual(actual, 165);
-            Assert.AreEqual(actual, 285);
-            Assert.AreEqual(actual, 405);
+            
         }
     }
 }
