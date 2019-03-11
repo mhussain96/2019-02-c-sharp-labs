@@ -1,0 +1,15 @@
+C:\2019-02-c-sharp-labs\labs\lab_107_list_folders_01\bin\Debug\lab_107_list_folders_01.exe.config
+C:\2019-02-c-sharp-labs\labs\lab_107_list_folders_01\bin\Debug\lab_107_list_folders_01.exe
+C:\2019-02-c-sharp-labs\labs\lab_107_list_folders_01\bin\Debug\lab_107_list_folders_01.pdb
+C:\2019-02-c-sharp-labs\labs\lab_107_list_folders_01\obj\Debug\lab_107_list_folders_01.csprojAssemblyReference.cache
+C:\2019-02-c-sharp-labs\labs\lab_107_list_folders_01\obj\Debug\MainWindow.g.cs
+C:\2019-02-c-sharp-labs\labs\lab_107_list_folders_01\obj\Debug\App.g.cs
+C:\2019-02-c-sharp-labs\labs\lab_107_list_folders_01\obj\Debug\lab_107_list_folders_01_MarkupCompile.cache
+C:\2019-02-c-sharp-labs\labs\lab_107_list_folders_01\obj\Debug\lab_107_list_folders_01_MarkupCompile.lref
+C:\2019-02-c-sharp-labs\labs\lab_107_list_folders_01\obj\Debug\MainWindow.baml
+C:\2019-02-c-sharp-labs\labs\lab_107_list_folders_01\obj\Debug\lab_107_list_folders_01.g.resources
+C:\2019-02-c-sharp-labs\labs\lab_107_list_folders_01\obj\Debug\lab_107_list_folders_01.Properties.Resources.resources
+C:\2019-02-c-sharp-labs\labs\lab_107_list_folders_01\obj\Debug\lab_107_list_folders_01.csproj.GenerateResource.cache
+C:\2019-02-c-sharp-labs\labs\lab_107_list_folders_01\obj\Debug\lab_107_list_folders_01.csproj.CoreCompileInputs.cache
+C:\2019-02-c-sharp-labs\labs\lab_107_list_folders_01\obj\Debug\lab_107_list_folders_01.exe
+C:\2019-02-c-sharp-labs\labs\lab_107_list_folders_01\obj\Debug\lab_107_list_folders_01.pdb

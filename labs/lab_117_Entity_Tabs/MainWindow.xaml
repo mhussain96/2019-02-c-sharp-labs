@@ -1,0 +1,39 @@
+﻿<Window x:Class="lab_117_Entity_Tabs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab_117_Entity_Tabs"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#f290">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="ButtonChangeTab" Background="#666" Grid.Row="1" Grid.Column="2" Content="Change Tab" Click="ButtonChangeTab_Click"/>
+        <Button x:Name="ButtonWindowChange" Background="#666" Grid.Row="0" Grid.Column="2" Content="Add Customer" Click="ButtonWindowChange_Click" />
+        <TabControl x:Name="TabControl01" Background="#999" Grid.Row="1" Grid.Column="1">
+            <TabItem x:Name="First" Background="#245245" Header="Customer">
+                <ListBox x:Name="customerListBox" Grid.Row="1" SelectionChanged="CustomerList_SelectionChanged"/>
+            </TabItem>
+            <TabItem x:Name="Second" Background="Beige" Header="Orders">
+                <ListBox x:Name="customerListBox01" Grid.Row="1" SelectionChanged="CustomerListBox01_SelectionChanged"/>
+            </TabItem>
+            <TabItem x:Name="Third" Background="HotPink" Header="Order Details">
+                <ListBox x:Name="customerListBox02" Grid.Row="1" SelectionChanged="CustomerListBox02_SelectionChanged"/>
+            </TabItem>
+            <TabItem x:Name="Fourth" Background="#56efdd" Header="Product Details">
+                <ListBox x:Name="customerListBox03" Grid.Row="1"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

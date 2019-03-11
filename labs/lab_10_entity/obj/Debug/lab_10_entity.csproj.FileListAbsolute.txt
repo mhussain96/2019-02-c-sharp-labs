@@ -1,0 +1,12 @@
+C:\2019-02-c-sharp-labs\labs\lab_10_entity\bin\Debug\lab_10_entity.exe.config
+C:\2019-02-c-sharp-labs\labs\lab_10_entity\bin\Debug\lab_10_entity.exe
+C:\2019-02-c-sharp-labs\labs\lab_10_entity\bin\Debug\lab_10_entity.pdb
+C:\2019-02-c-sharp-labs\labs\lab_10_entity\bin\Debug\EntityFramework.dll
+C:\2019-02-c-sharp-labs\labs\lab_10_entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\2019-02-c-sharp-labs\labs\lab_10_entity\bin\Debug\EntityFramework.xml
+C:\2019-02-c-sharp-labs\labs\lab_10_entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\2019-02-c-sharp-labs\labs\lab_10_entity\obj\Debug\lab_10_entity.csprojAssemblyReference.cache
+C:\2019-02-c-sharp-labs\labs\lab_10_entity\obj\Debug\lab_10_entity.csproj.CoreCompileInputs.cache
+C:\2019-02-c-sharp-labs\labs\lab_10_entity\obj\Debug\lab_10_entity.csproj.CopyComplete
+C:\2019-02-c-sharp-labs\labs\lab_10_entity\obj\Debug\lab_10_entity.exe
+C:\2019-02-c-sharp-labs\labs\lab_10_entity\obj\Debug\lab_10_entity.pdb

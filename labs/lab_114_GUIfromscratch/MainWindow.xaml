@@ -1,0 +1,27 @@
+﻿<Window x:Class="lab_114_GUIfromscratch.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab_114_GUIfromscratch"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#f068">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <ComboBox x:Name="DropdownBox" Grid.Row="1" Grid.Column="2" SelectionChanged="DropdownBox_SelectionChanged"/>
+        <TextBox x:Name="TextBoxName" Grid.Row="0" Grid.Column="2" TextChanged="TextBoxName_TextChanged"/>
+        <Button x:Name="UpdateName" Content="UPDATE" FontSize="23" Grid.Row="2" Grid.Column="2" Click="UpdateName_Click"/>
+        <ListBox x:Name="ListBox01" Grid.Column="0" Grid.Row="3" Background="#9ee58a"/>
+        <ListBox x:Name="ListBox02" Grid.Column="1" Grid.Row="3" Background="#6ee58a" SelectionChanged="ListBox02_SelectionChanged"/>
+    </Grid>
+</Window>

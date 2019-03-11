@@ -1,0 +1,32 @@
+﻿@page
+@model lab_122_basic_core_website_entity.Pages.CustomersModel
+@{
+}
+<h1>@Model.ShowMe</h1>
+<div class="row">
+    <div class="column col-sm-4">Customer ID</div>
+    <div class="column col-sm-4">ContactName</div>
+</div>
+@foreach (Customer c in Model.Customers)
+{
+    <div class="row">
+        <div class="column col-sm-4">@c.CustomerID</div>
+        <div class="column col-sm-4">@c.ContactName</div>
+    </div>
+}
+
+
+
+
+
+
+
+@*@page
+@model AboutModel
+@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@Model.Message</h3>
+
+<p>Use this area to provide additional information.</p>*@
