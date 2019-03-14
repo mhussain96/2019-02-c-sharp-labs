@@ -2,8 +2,6 @@
  
 01 Hello World
  
-    Done
- 
 02 OOP
 
 03 OOP Parent Child
@@ -22,6 +20,48 @@
 
 11 Entity reading Northwind to GUI
 
+12 OOP Revision
+
+13 Polymorphism
+
+14 OOP
+
+15 Panels
+
+16 NUnit
+
+17 Debug
+
+18 Streaming 
+
+19 Streaming
+
+20 Streamwriter
+
+21 Push Data to Memory 
+
+22 HTTP Get Sync
+
+23 Tasks
+
+24 Tasks
+
+25 Checked and Unchecked
+
+26 .Net Core Northwind
+
+27 Hello World
+
+28 Northwind Website 
+
+29 ASP .Net API
+
+30 Northwind to XML
+
+31 Struct
+
+32 Entity Code First
+
 101 Speedtype
 
 102 Speedtype GUI
@@ -39,3 +79,24 @@
 108 List Files And Folders
 
 109 New File With Content
+
+112 Collections
+
+113 ArrayList
+
+114 GUI From Scratch 
+
+115 Northwind Entity With OOP
+
+116 Exception
+
+117 Entity Tabs
+
+118 Array of Tests
+
+119 Northwind Tests
+
+121 Hashset to Excel
+
+122 - 125 Basic core website Entity
+

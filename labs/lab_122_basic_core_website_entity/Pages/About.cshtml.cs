@@ -34,12 +34,9 @@ namespace lab_122_basic_core_website_entity.Pages
 
     public class CustomersModel : PageModel
     {
-
         public String ShowMe { get; set; }
 
         public IEnumerable<Customer> Customers { get; set; }
-
-
 
         public void OnGet()
         {

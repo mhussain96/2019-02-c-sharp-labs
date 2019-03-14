@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using lab_122_basic_core_website_entity.Models;
 
 namespace lab_122_basic_core_website_entity
 {
@@ -33,6 +35,9 @@ namespace lab_122_basic_core_website_entity
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<lab_122_basic_core_website_entityContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("lab_122_basic_core_website_entityContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,0 +1,82 @@
+﻿@page
+@model lab_125_latest_entity_project.Pages.CustomersModel
+@{
+    ViewData["Title"] = "Customers";
+}
+
+<style>
+    .container {
+    }
+
+    div.col-sm-2 {
+        
+        padding: 3vh 2vh;
+        border-radius: 10px;
+    }
+
+    div.row {
+        padding: 2vh;
+    }
+
+    div.row-head {
+        background: #ddd7d7;
+    }
+</style>
+
+<div class="container">
+
+
+    <h2>Customers</h2>
+
+    </div>
+    <div class="row">
+        <div class="column col-sm-2"><h3>Customer ID</h3></div>
+        <div class="column col-sm-2"><h3>Contact Title</h3></div>
+        <div class="column col-sm-2"><h3>Contact Name</h3></div>
+        <div class="column col-sm-2"><h3>City</h3></div>
+        <div class="column col-sm-2"><h3>Company Name</h3></div>
+    </div>
+    
+    
+
+    @foreach (lab_125_latest_entity_project.Models.Customer c in Model.customers)
+    {
+        <div class="row">
+            <div class="column col-sm-2">@c.CustomerID</div>
+            <div class="column col-sm-2">@c.ContactTitle</div>
+            <div class="column col-sm-2">@c.ContactName</div>
+            <div class="column col-sm-2">@c.City</div>
+            <div class="column col-sm-2">@c.CompanyName</div>
+        </div>
+    }
+
+        <form>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Contact Title</label>
+                <input class="form-control" id="exampleInputTitle" placeholder="Contact Title">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Customer ID</label>
+                <input class="form-control" id="exampleInputPassword1" placeholder="Customer ID">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Company Name</label>
+                <input class="form-control" id="exampleInputCompany" placeholder="Company Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">City</label>
+                <input class="form-control" id="exampleInputCity" placeholder="City">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+</div>
+
+
+
+
