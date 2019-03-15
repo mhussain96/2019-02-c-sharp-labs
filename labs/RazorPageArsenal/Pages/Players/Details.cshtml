@@ -1,0 +1,73 @@
+﻿@page
+@model RazorPageArsenal.Pages.Players.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+
+    string path = "../../images";
+
+    path = $"../../images/{Model.Player.ID}.png";
+
+}
+
+<style>
+    .playerimg {
+        margin-left: 400px;
+        margin-top: -110px;
+        height: 300px;
+        width: 300px;
+        filter: grayscale(0.5);
+        border-bottom: 2px;
+    }
+
+        .playerimg:hover {
+            transform: scale(1.1);
+            transition: 1s;
+            filter: grayscale(0.0);
+        }
+</style>
+
+<h2>Details</h2>
+
+<div>
+    <h4>Player</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Player.PlayerName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Player.PlayerName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Player.DateOfBirth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Player.DateOfBirth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Player.Position)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Player.Position)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Player.MarketValue)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Player.MarketValue)
+        </dd>
+    </dl>
+
+    <div>
+        @if (path != "")
+        {
+            <img src="@path" alt="Sample Image" class="playerimg" />
+        }
+    </div>
+    
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Player.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

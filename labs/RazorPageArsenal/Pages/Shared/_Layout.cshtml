@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - RazorPageArsenal</title>
+    <title>@ViewData["Title"] - Arsenal</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -15,6 +16,55 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+
+    <style>
+        .navbar-inverse {
+            background: #ff0a16;
+            filter: drop-shadow(0px 2px 5px #000);
+        }
+
+        .navbar-inverse .navbar-brand {
+            color: #fff;
+        }
+
+        li {
+            color: #fff;
+            text-decoration-style: solid;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            margin-top: -10px;
+        }
+
+        img:hover {
+            transform: rotate(360deg);
+            transition: 1s;
+        }
+
+        .navbar-nav {
+            font-size: 20px;
+        }
+
+        .navbar-fixed-top {
+        }
+
+        .navbar-inverse .navbar-nav >
+        li > a {
+            color: #fff;
+            font-family: 'Oswald', sans-serif;  
+            margin-left: 15px;
+            letter-spacing: 3px;
+        }
+
+        .navbar-inverse .navbar-nav >
+        li > a:hover {
+            border-bottom: 5px solid #fff;
+        }
+
+        
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -26,13 +76,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-page="/Index" class="navbar-brand">RazorPageArsenal</a>
             </div>
             <div class="navbar-collapse collapse">
+                <a asp-page="/Index" class="navbar-brand"><img class="badgelogo" src="../../images/badge.png" /></a>
                 <ul class="nav navbar-nav">
                     <li><a asp-page="/Index">Home</a></li>
                     <li><a asp-page="/About">About</a></li>
                     <li><a asp-page="/Contact">Contact</a></li>
+                    <li><a asp-page="/Players/Index">Players</a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +95,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2019 - RazorPageArsenal</p>
+            <p>&copy; 2019 - Arsenal Football Club</p>
         </footer>
     </div>
 
