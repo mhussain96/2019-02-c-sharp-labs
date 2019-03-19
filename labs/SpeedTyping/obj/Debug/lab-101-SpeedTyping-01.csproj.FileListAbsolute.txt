@@ -4,3 +4,4 @@ C:\2019-02-c-sharp-labs\labs\SpeedTyping\bin\Debug\SpeedTyping.pdb
 C:\2019-02-c-sharp-labs\labs\SpeedTyping\obj\Debug\lab-101-SpeedTyping-01.csproj.CoreCompileInputs.cache
 C:\2019-02-c-sharp-labs\labs\SpeedTyping\obj\Debug\SpeedTyping.exe
 C:\2019-02-c-sharp-labs\labs\SpeedTyping\obj\Debug\SpeedTyping.pdb
+C:\2019-02-c-sharp-labs\labs\SpeedTyping\obj\Debug\lab-101-SpeedTyping-01.csprojAssemblyReference.cache
